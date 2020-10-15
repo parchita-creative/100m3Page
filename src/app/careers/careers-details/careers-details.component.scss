@@ -1,0 +1,17 @@
+#careers-details ul.qualities-careers li::before {
+    content: "\2022";
+    color: #00ADEE;
+    display: inline-block;
+    width: 23px;
+    margin-left: -1.5em;
+}
+
+#careers-details ul {
+    padding-inline-start: 20px;
+    list-style: none;
+}
+
+main #careers {
+    background: #FBFBFE;
+    padding: 60px 0;
+}

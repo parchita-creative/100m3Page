@@ -1,0 +1,146 @@
+<section id="intro-careers-details" class="clearfix intro-careers-details" *ngIf="careers">
+    <div class="container" data-aos="fade-up">
+        <div class="row align-middle">
+            <div class="col-lg-8">
+                <a (click)="goBack()" class="intro-text align-middle goBack">
+                    <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M5.78033 0.251051C6.07322 0.585786 6.07322 1.1285 5.78033 1.46323L1.81066 6L5.78033 10.5368C6.07322 10.8715 6.07322 11.4142 5.78033 11.7489C5.48744 12.0837 5.01256 12.0837 4.71967 11.7489L0.21967 6.60609C-0.0732234 6.27136 -0.0732234 5.72864 0.21967 5.39391L4.71967 0.251051C5.01256 -0.0836838 5.48744 -0.0836838 5.78033 0.251051Z"
+                            fill="#69758F" />
+                    </svg>
+                    <span>Back to Carrers</span>
+
+                </a>
+                 <h3 class="intro-title">{{careers.title}}</h3>
+                 <p class="location-time">{{careers.location | uppercase}} - {{careers.time | uppercase}} - {{careers.typeContract | uppercase}} </p>
+                <!-- <h3 class="intro-title">Ss Android Developer - Kotlin</h3>
+                <p class="location-time">ZUG /ENGINEERING – ANDROID /FULL TIME</p> -->
+            </div>
+            <div class="col-lg-4 text-md-left text-lg-right">
+                <a class="btn btn-apply ">APPLY FOR THIS JOB</a>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+</section><!-- End Intro Section -->
+
+<main id="main">
+
+    <section id="careers">
+        <div class="container" data-aos="fade-up">
+
+
+            <div id="careers-contain  " class="details">
+                <div class="row ">
+                    <div class="col col-md-8 col-lg-8 offset-md-2 form-apply">
+                        <form id="my-form-apply" class="ajaxForm" action="https://formcarry.com/s/M8tVBII9R"
+                            method="POST" accept-charset="UTF-8">
+                            <h4 class="title-careers mb-5">SUBMIT YOUR APPLICATION</h4>
+                            <div class="form-group row">
+                                <label for="" class="col-sm-3 col-form-label">Resume/CV</label>
+                                <div class="col-sm-9">
+                                    <label for="resume-cv" class=" col-form-label">
+                                        <img style="width:13px; margin-right: 10px;" src="assets/img/icon-adj.png"
+                                            alt="">
+                                        Attach Resume </label>
+                                    <input type="file" class="form-control-file " id="resume-cv">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="first_name" class="col-sm-3 col-form-label">First Name<span>*</span></label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="first_name" class="form-control" id="first_name"
+                                        placeholder="" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="last_name" class="col-sm-3 col-form-label">Last Name<span>*</span></label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="last_name" class="form-control" id="last_name"
+                                        placeholder="" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-sm-3 col-form-label">Email<span>*</span></label>
+                                <div class="col-sm-9">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder=""
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="phone_number" class="col-sm-3 col-form-label">Phone Number</label>
+                                <div class="col-sm-9">
+                                    <input type="tel" name="phone_number" class="form-control" id="phone_number"
+                                        placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="current_company" class="col-sm-3 col-form-label">Current company</label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="current_company" class="form-control" id="current_company"
+                                        placeholder="">
+                                </div>
+                            </div>
+                            <h4 class="title-careers mb-5 mt-5">LINKS</h4>
+
+                            <div class="form-group row">
+                                <label for="linkedin_url" class="col-sm-3 col-form-label">LinkedIn URL</label>
+                                <div class="col-sm-9">
+                                    <input type="url" name="linkedin_url" class="form-control" id="linkedin_url"
+                                        placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="twitter_url" class="col-sm-3 col-form-label">Twitter URL </label>
+                                <div class="col-sm-9">
+                                    <input type="url" name="twitter_url" class="form-control" id="twitter_url"
+                                        placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="portfolio_url" class="col-sm-3 col-form-label">Portfolio URL </label>
+                                <div class="col-sm-9">
+                                    <input type="url" name="portfolio_url" class="form-control" id="portfolio_url"
+                                        placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="other_url" class="col-sm-3 col-form-label">Other website </label>
+                                <div class="col-sm-9">
+                                    <input type="url" name="other_url" class="form-control" id="other_url"
+                                        placeholder="">
+                                </div>
+                                <input type="hidden" name="_gotcha"><!-- use this to prevent spam -->
+                            </div>
+
+                            <h4 class="title-careers mb-5 mt-5">ADDITIONAL INFORMATION</h4>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" rows="8"
+                                    placeholder="Add a cover letter or anything else you want to share."></textarea>
+
+                            </div>
+                            <div class="text-center">
+                                <!--<input type="submit" value=" Contact us" >-->
+                                <button class="btn btn-apply" type="submit" title="Send Message">SUBMIT
+                                    APPLICATION</button></div>
+
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+</main><!-- End #main -->
+

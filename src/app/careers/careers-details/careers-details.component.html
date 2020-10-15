@@ -1,0 +1,132 @@
+<section id="intro-careers-details" class="clearfix intro-careers-details" *ngIf="careers">
+  <div class="container" data-aos="fade-up">
+    <div class="row align-middle">
+      <div class="col-lg-8">
+        <a (click)="goBack()" class="intro-text align-middle goBack">
+          <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M5.78033 0.251051C6.07322 0.585786 6.07322 1.1285 5.78033 1.46323L1.81066 6L5.78033 10.5368C6.07322 10.8715 6.07322 11.4142 5.78033 11.7489C5.48744 12.0837 5.01256 12.0837 4.71967 11.7489L0.21967 6.60609C-0.0732234 6.27136 -0.0732234 5.72864 0.21967 5.39391L4.71967 0.251051C5.01256 -0.0836838 5.48744 -0.0836838 5.78033 0.251051Z"
+              fill="#69758F" />
+          </svg>
+          <span>Back to Carrers</span>
+
+        </a>
+        <h3 class="intro-title">{{careers.title}}</h3>
+        <p class="location-time">{{careers.location | uppercase}} - {{careers.time | uppercase}} - {{careers.typeContract | uppercase}} </p>
+      </div>
+      <div class="col-lg-4 text-md-left text-lg-right">
+        <a routerLink="/careers/apply/{{careers.id}}" class="btn btn-apply ">APPLY FOR THIS JOB</a>
+      </div>
+
+
+    </div>
+
+
+
+  </div>
+</section><!-- End Intro Section -->
+
+<main id="main">
+
+  <section id="careers">
+    <div class="container" data-aos="fade-up" id="careers-details">
+      <div class="row solution-container">
+        <div class="row solution-extra align-middle">
+
+          <div class="col-lg-12  " data-aos="fade-left">
+
+            <div id="careers-contain " class="details">
+              <div class="row">
+                <div class="col-12 col-md-8 col-lg-8">
+                  <div>
+                    <h4 class="title-careers">{{careers.aboutTitle}}</h4>
+                    <p class=""> {{careers.aboutDescription}} </p>
+                  </div>
+
+                  <div>
+                    <h4 class="title-careers">{{careers.positionTitle}}</h4>
+                    <p class="">{{careers.positiondescription}} </p>
+                  </div>
+
+                  <div>
+                    <h4 class="title-careers">{{careers.requirementsTitle}}</h4>
+                    <ul class="qualities-careers">
+                      <li *ngFor="let item of careers.reqDes">{{item}}</li>
+                      
+                     
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 class="title-careers">{{careers.rolesResTitle}}</h4>
+                    <p class="">{{careers.rolesResDes}}</p>
+                    <ul class="qualities-careers">
+                       <li *ngFor="let item of careers.rolesList">{{item}}</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-4 ">
+
+                  <div >
+                    <h4 class="title-careers">{{careers.personalQualities}}</h4>
+                  
+                    <ul class="qualities-careers">
+                      <li *ngFor="let item of careers.pQua">{{item}}</li>
+                    </ul>
+                  </div>
+             
+                 
+         
+
+                  <div >
+                    <h4 class="title-careers">{{careers.responsibilitiesTitle}}</h4> 
+                    <h4 class="title-careers">{{careers.resSubAcco}}</h4> 
+                    <ul class="qualities-careers" >
+                      <li *ngFor="let item of careers.resAcco">{{item}}</li>
+                      
+                      
+                    </ul>
+                   
+                    <h4 class="title-careers">{{careers.resSubHuman}}</h4> 
+                    <ul class="qualities-careers">
+                      <li *ngFor="let item of careers.resHuman">{{item}}</li>
+                      
+                     
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 class="title-careers">{{careers.industryTitle}}</h4>
+                    <ul class="qualities-careers">
+                      <li *ngFor="let item of careers.industryList">{{item}}</li>
+                     
+                     
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="title-careers">{{careers.employmentType}}</h4>
+                    <ul class="qualities-careers">
+                      <li *ngFor="let item of careers.empType">{{item}}</li>                    
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-12 col-lg-12 text-center mt-5 ">
+                <a  routerLink="/careers/apply/{{careers.id}}" class="btn btn-apply ">APPLY FOR THIS JOB</a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</main><!-- End #main -->

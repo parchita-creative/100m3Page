@@ -1,0 +1,71 @@
+<section id="intro-careers" class="clearfix">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-lg-6">
+          <p class="intro-text">Get more from your career.</p>
+          <h3 class="intro-title">Join the team leading the first B2B Platform revolutionizing the Timber trade business.</h3>
+        </div>
+        
+
+      </div>
+
+      
+
+    </div>
+  </section><!-- End Intro Section -->
+
+  <main id="main">
+
+    <section id="careers">
+      <div class="container" data-aos="fade-up" >
+        <div class="row solution-container">
+          <div class="row solution-extra align-middle">
+            
+            <div class="col-lg-12  " data-aos="fade-left">
+              
+              
+              <p>
+                Die Plattform www.100m3.com wurde im Oktober 2012 gestartet mit der Vision, eine analytische Webseite zu erstellen, die sich auf Informationen und organisatorische Unterstützung für den Holzhandel konzentriert. Wir haben mit Insideranalysen mit den wichtigsten Holzmärkten Chinas begonnen und bieten Zugang zu Echtzeitpreisen von über 300 Holzprodukten auf drei der wichtigsten chinesischen Märkte: Manzhouli, Suifenhe und Shanghai. Seit 2012 hat 100m3.com den Verkauf von 565 Tausend Kubikmetern Holzprodukten auf dem chinesischen Markt im Gesamtwert von 78,5 Mio. USD ermöglicht. Im Jahre 2018 haben wir die Firma 100m3 AG in der Schweiz gegründet, um eine B2B-E-Commerce-Plattform für den Holzhandel aufzubauen und voranzutreiben. Die Plattform wird zu einem wichtigen Geschäftsinstrument für Unternehmer, die auf den Holzmärkten tätig sind (Holzproduzenten, Förster, Bauunternehmen usw.) und bietet durch die Zusammenarbeit mit führenden Holzmarktteilnehmern, Logistikunternehmen, Banken und anderen Zahlungsdienstleistern eine erste Basisinfrastruktur in der Schweiz und Westeuropa
+              </p>
+                <!--<div>
+               <h3 class="title">NO CAREERS FOUND</h3>
+                    <div class="divider"></div>
+                 
+              </div>-->
+              <div id="careers-contain" class="">
+                <div>
+                  <h3 class="title">ENGINEERING</h3>
+                  <div class="divider"></div>
+                </div>
+                
+                <div class="row mb-5-sm" id="res" *ngFor="let careers of careers" >
+                   <div class="col-12 col-md-8 col-lg-8 col-sm-12">
+                    <div id="res" >
+                     <h4 class="title-careers">{{careers.title}}</h4> 
+                      <p class="location-careers">   {{careers.location}}</p> 
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-4 col-lg-4 col-sm-12 text-md-left text-lg-right  ">
+                    <!-- <a [routerLink]="['/careers', careers.id]" routerLinkActive="router-link-active"  class="btn btn-apply ">Apply</a>-->
+                   <a  routerLink="/careers/details/{{careers.id}}" class="btn btn-apply ">Apply</a>
+                  </div>
+
+                </div>
+
+
+              </div>
+ 
+            </div>
+          </div>
+          
+
+      </div>
+
+      </div>
+    </section>
+    
+   
+
+
+  </main><!-- End #main -->
