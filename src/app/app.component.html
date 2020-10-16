@@ -6,18 +6,18 @@
     <div class="logo float-left">
       <!-- Uncomment below if you prefer to use an text logo -->
       <!-- <h1><a href="index.html">NewBiz</a></h1> -->
-      <a href="/"><img src="/assets/img/logo.png" alt="" class="img-fluid"></a>
+      <a routerLink="/home"><img src="/assets/img/logo.png" alt="" class="img-fluid"></a>
     </div>
 
     <nav class="main-nav float-left d-none d-lg-block ml-lg-5">
       <ul>
-        <li class="active d-none"><a href="/" data-link>home</a></li>
-        <li class=""><a href="#solution">The Solution</a></li>
-        <li><a href="#functions">Principal Functions</a></li>
-        <li><a href="#about">Contact Us</a></li>
+        <li class="active d-none"><a routerLink="/home" >home</a></li>
+        <li class=""><a routerLink="#solution" routerLinkActive="active">The Solution</a></li>
+        <li><a routerLink="#functions" routerLinkActive="active" >Principal Functions</a></li>
+        <li><a routerLink="#about" routerLinkActive="active" >Contact Us</a></li>
 
-        <li class="d-lg-none"><a href="/careers" data-link>Careers</a></li>
-        <li class="d-lg-none drop-down"><a href="">English</a>
+        <li class="d-lg-none"><a  routerLink="careers"  routerLinkActive="active">Careers</a></li>
+        <li class="d-lg-none drop-down"><a href="#">English</a>
           <ul>
             <li><a href="#">Other</a></li>
          
@@ -32,8 +32,8 @@
     <nav class="main-nav float-right  d-lg-block" id="d-mobile-none">
       <ul class=" ">
         
-        <li class=""><a href="/careers" data-link>Careers</a></li>
-        <li class="drop-down"><a href="">English</a>
+        <li class=""><a routerLink="careers" routerLinkActive="active" >Careers</a></li>
+        <li class="drop-down"><a href="#">English</a>
           <ul>
             <li><a href="#">Other</a></li>
          

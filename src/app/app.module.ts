@@ -8,6 +8,8 @@ import { CareersComponent } from './careers/careers.component';
 import { CareersDetailsComponent } from './careers/careers-details/careers-details.component';
 import { CareersApplyComponent } from './careers/careers-apply/careers-apply.component';
 import { CareersService } from './careers.service';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 //import { MessageService } from './message.service';
 
 @NgModule({
@@ -20,7 +22,9 @@ import { CareersService } from './careers.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
+    RouterModule
   ],
   providers: [
     CareersService,
