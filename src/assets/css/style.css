@@ -1170,31 +1170,8 @@ input[type="file"]#resume-cv {
     width: fit-content;
     text-align: center;
  }
-/*
-input[type="file"]::-webkit-file-upload-button {
-  
-  visibility: hidden;
-  
-}
 
 
-input[type="file"]::before {
-
-  content: url("../img/icon-adj.png");
-  display: inline-block;
-  background: #EBECF0;
-  border: 0.5px solid #FFFFFF;
-  box-sizing: border-box;
-  padding: 10px 150px 10px 29px;
-  font-size: 14px;
-  color: #69758F;
- 
-}
-input[type="file"]::after {
-  content: "Attach Resume ";
-  margin: 0 0 0 -290px;
-}
-*/
 
 
 

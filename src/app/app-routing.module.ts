@@ -12,15 +12,15 @@ const routes: Routes = [
     component: HomeComponent,
     },
     {
-        path: 'careers',
+        path: '/careers',
         component: CareersComponent
     },
     {
-      path: 'careers/details/:id',
+      path: '/careers/details/:id',
       component: CareersDetailsComponent
     },
     {
-      path: 'careers/apply/:id',
+      path: '/careers/apply/:id',
       component: CareersApplyComponent
     },
     {
